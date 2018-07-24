@@ -1,0 +1,3 @@
+include ':oss-buildSrc'
+
+project(':oss-buildSrc').projectDir = "$rootDir/../sub-tree/buildSrc" as File

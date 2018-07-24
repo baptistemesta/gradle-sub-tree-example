@@ -1,4 +1,5 @@
 apply plugin: 'application'
+apply plugin: 'oss-plugin'
 
 mainClassName = 'org.acme.Main'
 
