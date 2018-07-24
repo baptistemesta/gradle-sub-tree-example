@@ -1,0 +1,12 @@
+rootProject.name = 'oss-project'
+
+apply from: 'oss-settings.gradle'
+
+def fixPath
+fixPath = { project ->
+    String relativeProjectPath = project.projectDir.path.replace(settingsDir.path, "")
+    project.projectDir = new File(relativeProjectPath.replace("/my-project/",''))
+    project.children.each fixPath
+}
+
+rootProject.children.each fixPath

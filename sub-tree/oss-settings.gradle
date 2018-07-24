@@ -1,0 +1,3 @@
+include ':my-project'
+include ':my-project:module-a'
+include ':my-project:module-b'
