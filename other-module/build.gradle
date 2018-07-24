@@ -1,0 +1,7 @@
+apply plugin: 'application'
+
+mainClassName = 'com.acme.Main'
+
+dependencies {
+    compile project(':my-project:module-a')
+}
