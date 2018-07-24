@@ -2,7 +2,6 @@ rootProject.name = 'gradle-sub-tree-example'
 
 apply from: 'sub-tree/oss-settings.gradle'
 
-// move all community project in community folder:
 def fixPath
 fixPath = { project ->
     String relativeProjectPath = project.projectDir.path.replace(settingsDir.path, "")
